@@ -19,7 +19,9 @@ Menyuntikkan kode JavaScript untuk memanggil objek sensitif `document.cookie`.
 
 Hasil: Browser mengeksekusi script tersebut dan memunculkan Pop-up berisi PHPSESSID (Session Token). Jika token ini dikirim ke server penyerang, akun pengguna dapat diambil alih tanpa password (Session Hijacking).
 
-2. Defense & Remediation (Blue Team)
+
+
+### 2. Defense & Remediation (Blue Team) 
 Root Cause: Aplikasi tidak melakukan Output Encoding. Karakter berbahaya seperti < dan > dianggap sebagai teks biasa.
 
 Rekomendasi Perbaikan:
