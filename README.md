@@ -51,7 +51,7 @@ if result == 0:
 s.close()
 ```
 
-2. Execution & Results
+### 2. Execution & Results
 Script dijalankan untuk memindai 6.500 port pertama pada target Metasploitable 2.
 
 Command:
@@ -79,7 +79,8 @@ Port 6000 is OPEN (X11)
 ```
 <img width="654" height="513" alt="Screenshot 2025-11-28 224733" src="https://github.com/user-attachments/assets/c6ba8c86-a385-4037-a85c-9c008016f4b3" />
 
-3. Technical Analysis (Why Nmap is Better?)
+
+### 3. Technical Analysis (Why Nmap is Better?)
 Selama pengujian, script ini memakan waktu hampir 2 jam untuk memindai 6.500 port.
 
 Performance Bottleneck: Script ini bekerja secara Serial (Single-Threaded). Artinya, program menunggu port 1 selesai (timeout/connect), baru lanjut ke port 2.
@@ -88,7 +89,7 @@ Rumus: 6500 port x 1 detik (timeout) ≈ 108 menit.
 
 Comparison with Nmap: Nmap jauh lebih cepat karena menggunakan Multi-threading / Asynchronous Scanning, di mana ia bisa mengirim ribuan paket sekaligus tanpa menunggu satu per satu.
 
-4. Blue Team Perspective (Detection)
+### 4. Blue Team Perspective (Detection)
 Script ini sangat "berisik" (Noisy) dan mudah dideteksi oleh Firewall/IDS.
 
 Metode: Full TCP Connect Scan.
