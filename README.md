@@ -15,7 +15,7 @@ Menyuntikkan kode JavaScript untuk memanggil objek sensitif `document.cookie`.
 <script>alert(document.cookie)</script>
 ```
 
-<img width="955" height="716" alt="Screenshot 2025-11-28 093444" src="https://github.com/user-attachments/assets/b96562ed-6bf8-484d-a6a4-4d74dfcbda9d" />
+<img width="956" height="761" alt="Screenshot 2025-11-28 093528" src="https://github.com/user-attachments/assets/cf3f53bd-2bfa-4381-8934-33b7783b1876" />
 
 Hasil: Browser mengeksekusi script tersebut dan memunculkan Pop-up berisi PHPSESSID (Session Token). Jika token ini dikirim ke server penyerang, akun pengguna dapat diambil alih tanpa password (Session Hijacking).
 
