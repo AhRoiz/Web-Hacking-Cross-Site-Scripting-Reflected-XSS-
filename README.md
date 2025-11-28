@@ -77,7 +77,7 @@ Port 1524 is OPEN (Ingreslock Backdoor)
 Port 6000 is OPEN (X11)
 ...
 ```
-(Screenshot terminal saat scan selesai bisa ditaruh di sini)
+<img width="654" height="513" alt="Screenshot 2025-11-28 224733" src="https://github.com/user-attachments/assets/c6ba8c86-a385-4037-a85c-9c008016f4b3" />
 
 3. Technical Analysis (Why Nmap is Better?)
 Selama pengujian, script ini memakan waktu hampir 2 jam untuk memindai 6.500 port.
